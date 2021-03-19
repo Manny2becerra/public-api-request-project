@@ -2,7 +2,7 @@
 const searchDiv = document.getElementsByClassName('search-container')[0];
 const searchForm = document.createElement('form');
 const searchBar = document.createElement('input');
-const searchButton = document.createElement('input');
+const searchButton = document.createElement('button');
 searchDiv.appendChild(searchForm);
 searchForm.appendChild(searchBar);
 searchForm.appendChild(searchButton);
@@ -13,7 +13,7 @@ searchBar.id = 'search-input';
 searchBar.className = 'search-input';
 searchBar.placeholder = 'Search...';
 searchButton.type = 'submit';
-searchButton.value = '&#x1F50D;';
+searchButton.innerHTML = '&#x1F50D;';
 searchButton.id = 'search-submit';
 searchButton.className = 'search-submit';
 
